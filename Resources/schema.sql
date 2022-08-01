@@ -36,7 +36,7 @@ CREATE TABLE salaries (
   from_date DATE NOT NULL,
   to_date DATE NOT NULL,
   FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
-  PRIMARY KEY (emp_no)
+  PRIMARY KEY (emp_no, from_date)
 );
 
 -- Creating additional tables. For Titles. 
@@ -51,8 +51,8 @@ CREATE TABLE titles (
 
 -- Creating additional tables. For Dept_Emp. 
 CREATE TABLE dept_emp (
-	dept_no VARCHAR(4) NOT NULL,
 	emp_no INT NOT NULL,
+	dept_no VARCHAR(4) NOT NULL,
 	from_date DATE NOT NULL,
 	to_date DATE NOT NULL,
 	FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
@@ -60,5 +60,10 @@ CREATE TABLE dept_emp (
 	PRIMARY KEY (emp_no, dept_no)
 );
 
--- SQL Test.
-SELECT * FROM departments;
+--SQL Test
+SELECT * FROM departments 
+SELECT * FROM dept_emp
+SELECT * FROM dept_manager
+SELECT * FROM employees
+SELECT * FROM salaries
+SELECT * FROM titles
