@@ -21,10 +21,10 @@ In the second deliverable analysis we found the employees eligible for the Mento
 Four major points:
    - 1). In the first deliverable analysis, after joing the employees and titles table and applying the desirable filters while also removing duplicates to create the "unique_titles" table and csv file, there are 72,458 employees that will retire. 
    - 2). Out of those employees leaving in the "unique_titles" table, there are:
-      - 25,916 Senior Engineers, 
+      - 25,916 Senior Engineers
       - 24,926 Senior Staff
       - 9,285 Engineers
-      - 7,636 Staff, 
+      - 7,636 Staff
       - 3,603 Technique Leaders
       - 1,090 Assistant Engineers
       - 2 Managers
